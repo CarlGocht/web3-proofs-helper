@@ -40,8 +40,8 @@ This repository contains helper functions for getting web3 proofs.
 
     const formattedBalances = {
         underlyingAsset: assets.aaveAddress, // address of voting asset
-        value: 100, // total balance (user balance + delegated voting power) on voting block
-        userBalance: 100, // should be real user balance on voting block (not current))
+        value: "100", // total balance (user balance + delegated voting power) on voting block
+        userBalance: "100", // should be real user balance on voting block (not current))
         isWithDelegatedPower: false,
     }
     
@@ -49,7 +49,7 @@ This repository contains helper functions for getting web3 proofs.
     const proofs = await getVotingProofs({
         provider: govCoreRPCProvider, // ether js v5 provider
         blockHash: proposal.snapshotBlockHash, // from proposal data
-        balances: formattedBalances,
+        balances: [formattedBalances],
         address: voterAddress, // voter asset (signer or representation address)
         aAaveAddress: assets.aAaveAddress,
         slots: assetsBalanceSlots,

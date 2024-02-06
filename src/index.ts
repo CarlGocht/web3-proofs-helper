@@ -171,7 +171,7 @@ export const getProof = async (
   return await provider.send("eth_getProof", [
     address,
     storageKeys,
-    ethers.BigNumber.from(blockNumber).toHexString(),
+    ethers.utils.hexStripZeros(ethers.BigNumber.from(blockNumber).toHexString()),
   ]);
 };
 
