@@ -13,7 +13,7 @@ This repository contains helper functions for getting web3 proofs.
 ### How to use
 
 ```typescript
-    import { getVotingProofs, baseSlots } from 'web3-proofs-helper';
+    import { getVotingProofs, baseSlots, AssetsBalanceSlots, Asset } from 'web3-proofs-helper';
     import { AaveV3Ethereum, AaveSafetyModule, GovernanceV3Ethereum } from '@bgd-labs/aave-address-book';
 
     const assets = {
