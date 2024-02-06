@@ -1,7 +1,7 @@
 {
   "name": "web3-proofs-helper",
   "description": "This repository contains helper functions for getting web3 proofs.",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "author": "Oleksandr Tkach",
   "license": "MIT",
   "private": false,
